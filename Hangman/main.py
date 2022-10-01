@@ -33,7 +33,10 @@ while guessword_str != dash:
         if w == n:
             dash.insert(idx,w)
             dash.pop(idx+1)
-            i -=1
+    if n in splitword:
+        i = i
+    else:
+        i +=1
 
     print("__________________________")
     print(dash)
